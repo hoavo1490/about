@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoa Vo — Profile</title>
+  <meta name="description" content="Hoa Vo — Đà Nẵng, Việt Nam. Sản phẩm: olala.chat, Ghi Sổ Nhanh (Android)." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
+    h1 { margin: 0 0 6px; font-size: 32px; }
+    .sub { margin: 0 0 28px; opacity: .75; }
+    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 14px; padding: 16px 18px; margin: 12px 0; }
+    .title { display: flex; gap: 10px; align-items: baseline; justify-content: space-between; }
+    .title h2 { margin: 0; font-size: 18px; }
+    a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+    .muted { opacity: .75; margin: 8px 0 0; }
+    footer { margin-top: 28px; opacity: .7; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Hoa Vo</h1>
+      <p class="sub">Đà Nẵng, Việt Nam</p>
+    </header>
+
+    <section aria-label="Sản phẩm">
+      <div class="card">
+        <div class="title">
+          <h2>olala.chat</h2>
+          <a href="https://olala.chat" target="_blank" rel="noopener">Visit</a>
+        </div>
+        <p class="muted">App chat với người lạ.</p>
+      </div>
+
+      <div class="card">
+        <div class="title">
+          <h2>Ghi Sổ Nhanh (Android)</h2>
+          <span class="muted">App</span>
+        </div>
+        <p class="muted">Ứng dụng ghi lại giao dịch/tiền thu nhanh cho người bán lẻ.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Hoa Vo
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
